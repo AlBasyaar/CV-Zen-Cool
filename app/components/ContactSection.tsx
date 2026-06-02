@@ -5,7 +5,7 @@ import { buttonBase, cardBase } from "./shared";
 
 const FacebookIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
-    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
   </svg>
 );
 
@@ -19,7 +19,7 @@ const InstagramIcon = ({ className }: { className?: string }) => (
 
 const TiktokIcon = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
-    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.25-.8 4.45-2.2 6.13-1.6 1.91-4.04 2.96-6.49 2.77-2.67-.15-5.18-1.57-6.52-3.8-1.42-2.31-1.45-5.34-.1-7.7 1.25-2.19 3.6-3.66 6.09-3.92.15-.02.31-.02.46-.02v4.06c-1.41.09-2.73.91-3.4 2.12-.66 1.18-.68 2.69-.11 3.89.58 1.19 1.94 1.97 3.28 1.96 1.34 0 2.59-.83 3.12-2.07.24-.54.33-1.14.33-1.74V.02z"/>
+    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.25-.8 4.45-2.2 6.13-1.6 1.91-4.04 2.96-6.49 2.77-2.67-.15-5.18-1.57-6.52-3.8-1.42-2.31-1.45-5.34-.1-7.7 1.25-2.19 3.6-3.66 6.09-3.92.15-.02.31-.02.46-.02v4.06c-1.41.09-2.73.91-3.4 2.12-.66 1.18-.68 2.69-.11 3.89.58 1.19 1.94 1.97 3.28 1.96 1.34 0 2.59-.83 3.12-2.07.24-.54.33-1.14.33-1.74V.02z" />
   </svg>
 );
 
@@ -28,9 +28,12 @@ export function ContactSection() {
     <div className="w-full border-t-[3px] border-[#1E3A8A]">
       <section id="kontak" className="py-20 px-6 max-w-[1280px] mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-[#131b2e] tracking-tight">
-            Ada yang Bisa Kami Bantu?
+          <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-[#131b2e] tracking-tight mb-4">
+            Hubungi Kami
           </h2>
+          <p className="text-[#434655] font-medium max-w-2xl mx-auto">
+            Butuh bantuan atau ingin mendapatkan penawaran? Hubungi kami melalui form di bawah ini atau melalui kontak yang tersedia.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -39,7 +42,7 @@ export function ContactSection() {
             <h3 className="font-[family-name:var(--font-syne)] text-2xl font-bold mb-8">
               Informasi Kontak
             </h3>
-            
+
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="bg-[#DBEAFE] p-2 border-[2px] border-[#1E3A8A] rounded-sm mt-0.5">
@@ -87,9 +90,9 @@ export function ContactSection() {
                 <div className="font-[family-name:var(--font-syne)] font-bold text-lg mb-3">Ikuti Kami</div>
                 <div className="flex gap-3">
                   {[
-                    { Icon: FacebookIcon, label: "Facebook", href: "https://facebook.com" },
-                    { Icon: InstagramIcon, label: "Instagram", href: "https://instagram.com" },
-                    { Icon: TiktokIcon, label: "TikTok", href: "https://tiktok.com" }
+                    { Icon: FacebookIcon, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61581807759926" },
+                    { Icon: InstagramIcon, label: "Instagram", href: "https://www.instagram.com/cvzencool/" },
+                    { Icon: TiktokIcon, label: "TikTok", href: "https://www.tiktok.com/@cvzencool" }
                   ].map(({ Icon, label, href }, i) => (
                     <a
                       key={i}

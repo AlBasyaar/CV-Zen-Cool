@@ -82,9 +82,12 @@ export function FAQSection() {
   return (
     <section id="faq" className="py-20 px-6 max-w-3xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-[#131b2e] tracking-tight">
-          Transparan dari Awal
+        <h2 className="font-[family-name:var(--font-syne)] text-[clamp(1.5rem,4vw,3rem)] font-extrabold text-[#131b2e] tracking-tight mb-4 whitespace-nowrap">
+          Syarat dan Ketentuan
         </h2>
+        <p className="text-[#434655] font-medium">
+          Informasi penting mengenai layanan kami. Silakan baca dengan seksama sebelum menggunakan jasa kami.
+        </p>
       </div>
 
       <div className="space-y-4">

@@ -22,9 +22,12 @@ export function TestimonialSection() {
     <section id="testimoni" className="py-20 px-6 bg-[#2563EB] border-y-[3px] border-[#1E3A8A] shadow-[0px_8px_0px_0px_#1E3A8A]">
       <div className="max-w-[1280px] mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-white tracking-tight">
+          <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-white tracking-tight mb-4">
             Mereka Sudah Buktikan
           </h2>
+          <p className="text-white/90 font-medium max-w-2xl mx-auto">
+            Kepuasan pelanggan adalah prioritas utama kami. Lihat apa yang dikatakan pelanggan tentang layanan kami.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

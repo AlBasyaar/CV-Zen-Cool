@@ -1,0 +1,25 @@
+import { Navbar } from "./components/Navbar";
+import { HeroSection } from "./components/HeroSection";
+import { Ticker } from "./components/Ticker";
+import { PricingSection } from "./components/PricingSection";
+import { GallerySection } from "./components/GallerySection";
+import { TestimonialSection } from "./components/TestimonialSection";
+import { FAQSection } from "./components/FAQSection";
+import { ContactSection } from "./components/ContactSection";
+import { Footer } from "./components/Footer";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen relative overflow-hidden flex flex-col">
+      <Navbar />
+      <HeroSection />
+      <Ticker />
+      <PricingSection />
+      <GallerySection />
+      <TestimonialSection />
+      <FAQSection />
+      <ContactSection />
+      <Footer />
+    </main>
+  );
+}

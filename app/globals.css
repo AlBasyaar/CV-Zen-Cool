@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-syne: var(--font-syne);
+  --font-space-grotesk: var(--font-space-grotesk);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar matching the blue button */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #faf8ff; 
+  border-left: 2px solid #1E3A8A; /* matching the border used in navbar/buttons */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563EB;
+  border: 2px solid #1E3A8A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2563EB #faf8ff;
+}
+
+body {
+  background-color: #faf8ff;
+  color: #131b2e;
+}

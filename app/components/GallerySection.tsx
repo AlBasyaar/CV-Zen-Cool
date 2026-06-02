@@ -16,10 +16,13 @@ export function GallerySection() {
     <div className="w-full border-t-[3px] border-[#1E3A8A]">
       <section id="galeri" className="py-20 px-6 max-w-[1280px] mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-[#131b2e] tracking-tight">
-          Hasil Kerja Kami
-        </h2>
-      </div>
+          <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-[#131b2e] tracking-tight mb-4">
+            Galeri Pekerjaan Kami
+          </h2>
+          <p className="text-[#434655] font-medium max-w-2xl mx-auto">
+            Lihat hasil kerja tim teknisi profesional kami dalam memberikan layanan perawatan AC terbaik.
+          </p>
+        </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
         {services.map((item, i) => (

@@ -7,9 +7,12 @@ export function PricingSection() {
   return (
     <section id="harga" className="py-20 px-6 max-w-[1280px] mx-auto">
       <div className="text-center mb-16">
-        <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-[#131b2e] tracking-tight">
-          Harga Jelas, Tanpa Kejutan.
+        <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-[#131b2e] tracking-tight mb-4">
+          Harga Layanan
         </h2>
+        <p className="text-[#434655] font-medium max-w-2xl mx-auto">
+          Berikut adalah daftar harga layanan kami. Kami menawarkan berbagai layanan dengan harga kompetitif.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">

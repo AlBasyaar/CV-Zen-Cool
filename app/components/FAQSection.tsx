@@ -2,21 +2,78 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Check } from "lucide-react";
 
 export function FAQSection() {
   const faqs = [
     {
-      q: "Prosedur Booking",
-      a: "Anda dapat memesan melalui formulir di website kami atau langsung menekan tombol WhatsApp. Tim kami akan mengkonfirmasi jadwal kedatangan teknisi maksimal 15 menit setelah pesanan masuk.",
+      q: "Layanan dan Jaminan",
+      a: (
+        <ul className="space-y-3 pt-1">
+          <li className="flex items-start gap-3">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+              <Check className="w-4 h-4 stroke-[3]" />
+            </div>
+            <span className="leading-relaxed">Pengerjaan service bergaransi 1 bulan.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+              <Check className="w-4 h-4 stroke-[3]" />
+            </div>
+            <span className="leading-relaxed">Jika terjadi masalah dalam 30 hari setelah service, kami akan memperbaikinya tanpa biaya tambahan.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+              <Check className="w-4 h-4 stroke-[3]" />
+            </div>
+            <span className="leading-relaxed">Garansi tidak berlaku jika kerusakan disebabkan oleh faktor eksternal seperti bencana alam, tegangan listrik tidak stabil, atau modifikasi yang dilakukan oleh pihak lain.</span>
+          </li>
+        </ul>
+      ),
     },
     {
-      q: "Garansi Pekerjaan",
-      a: "Kami memberikan garansi 30 hari untuk setiap layanan servis lengkap dan perbaikan. Jika masalah yang sama muncul kembali dalam masa garansi, perbaikan selanjutnya gratis.",
+      q: "Pembayaran",
+      a: (
+        <ul className="space-y-3 pt-1">
+          <li className="flex items-start gap-3">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+              <Check className="w-4 h-4 stroke-[3]" />
+            </div>
+            <span className="leading-relaxed">Pembayaran dapat dilakukan dengan tunai atau transfer bank.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+              <Check className="w-4 h-4 stroke-[3]" />
+            </div>
+            <span className="leading-relaxed">Invoice akan diberikan setelah Pengerjaan layanan selesai.</span>
+          </li>
+        </ul>
+      ),
     },
     {
-      q: "Pembatalan & Reschedule",
-      a: "Pembatalan atau perubahan jadwal gratis jika dilakukan minimal 2 jam sebelum teknisi tiba. Silakan hubungi CS kami via WhatsApp untuk perubahan.",
+      q: "Jadwal, Pembatalan & Reschedule",
+      a: (
+        <ul className="space-y-3 pt-1">
+          <li className="flex items-start gap-3">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+              <Check className="w-4 h-4 stroke-[3]" />
+            </div>
+            <span className="leading-relaxed">Jadwal layanan dapat dibuat melalui telepon, WhatsApp, atau website kami.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+              <Check className="w-4 h-4 stroke-[3]" />
+            </div>
+            <span className="leading-relaxed">Proses reschedule yang fleksibel menyesuaikan kembali dengan ketersediaan waktu luang Anda.</span>
+          </li>
+          <li className="flex items-start gap-3">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+              <Check className="w-4 h-4 stroke-[3]" />
+            </div>
+            <span className="leading-relaxed">Teknisi kami akan tiba sesuai jarak tempuh. Jika terjadi keterlambatan, kami akan menginformasika kepada anda..</span>
+          </li>
+        </ul>
+      ),
     },
   ];
 

@@ -38,6 +38,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://zencool.com",
   },
+  icons: {
+    icon: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1769828376/Logo_Zencool_pmyw1u.jpg",
+    shortcut: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1769828376/Logo_Zencool_pmyw1u.jpg",
+    apple: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1769828376/Logo_Zencool_pmyw1u.jpg",
+  },
 };
 
 export default function RootLayout({

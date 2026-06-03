@@ -10,7 +10,7 @@ export function TestimonialSection() {
     },
     {
       text: "Harga sesuai dengan yang di website, gak ada biaya tambahan aneh-aneh. Garansi juga jelas, seminggu setelah servis AC agak bocor dikit langsung datang perbaiki gratis.",
-      author: "SITI AMINAH",
+      author: "SITI RAHAYU",
     },
     {
       text: "Pelayanan mantap jiwa. Teknisi ramah dan edukatif, dikasih tau tips biar AC lebih awet. Bakal langganan terus sih ini mah.",

@@ -110,7 +110,9 @@ export function ContactSection() {
             </div>
 
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6285285564117?text=Halo%20Admin%2C%20saya%20tertarik%20untuk%20memesan%20AC.%20Boleh%20minta%20informasi%20mengenai%20tipe%20yang%20tersedia%20dan%20pricelist-nya%3F%20Terima%20kasih!"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${buttonBase} bg-[#25D366] text-white w-full mt-8 text-lg justify-center`}
             >
               <MessageCircle className="w-6 h-6" />
@@ -123,7 +125,10 @@ export function ContactSection() {
             <h3 className="font-[family-name:var(--font-syne)] text-2xl font-bold mb-6">
               Kirim Pesan
             </h3>
-            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-4" onSubmit={(e) => {
+              e.preventDefault();
+              window.open("https://wa.me/6285285564117", "_blank");
+            }}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">
                   <label htmlFor="name" className="font-bold text-sm text-[#131b2e]">Nama Lengkap</label>

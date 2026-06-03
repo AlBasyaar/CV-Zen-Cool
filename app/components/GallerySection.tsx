@@ -24,7 +24,7 @@ export function GallerySection() {
           </p>
         </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
         {services.map((item, i) => (
           <div
             key={i}

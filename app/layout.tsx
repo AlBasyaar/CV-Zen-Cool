@@ -20,7 +20,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Service AC CV Zen'cool | Teknisi AC Terpercaya",
     description: "AC Bermasalah? Serahkan pada Ahlinya. Penanganan cepat, transparan, dan hasil kerja pasti bergaransi.",
-    url: "https://zencool.com",
     siteName: "Zen'cool",
     locale: "id_ID",
     type: "website",

@@ -66,7 +66,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full"
+          className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full"
         >
           {[
             { value: "500+", label: "Pelanggan" },

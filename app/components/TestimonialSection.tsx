@@ -1,20 +1,27 @@
 "use client";
 
+import { Star } from "lucide-react";
 import { cardBase } from "./shared";
 
 export function TestimonialSection() {
   const testimonials = [
     {
-      text: "Teknisi datang tepat waktu. Pengerjaan cepat dan rapi. AC saya yang tadinya cuma keluar angin doang sekarang dingin menggigil.",
+      text: "Teknisi dari Zen'Cool sangat profesional dan tepat waktu. AC saya yang sudah tidak dingin kembali seperti baru setelah diservis. Mereka juga memberikan tips perawatan yang sangat berguna. Pasti akan menggunakan jasa mereka lagi!.",
       author: "BUDI SANTOSO",
+      location: "Jakarta",
+      image: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150&h=150&fit=crop"
     },
     {
-      text: "Harga sesuai dengan yang di website, gak ada biaya tambahan aneh-aneh. Garansi juga jelas, seminggu setelah servis AC agak bocor dikit langsung datang perbaiki gratis.",
+      text: "Saya sangat puas dengan layanan Zen'Cool. Mereka merespons dengan cepat saat AC kantor kami bermasalah. Teknisinya ramah, kompeten, dan memberikan solusi yang tepat. Harganya juga sangat kompetitif dibandingkan penyedia jasa lainnya. Sangat direkomendasikan!.",
       author: "SITI RAHAYU",
+      location: "Bekasi",
+      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=150&h=150&fit=crop"
     },
     {
-      text: "Pelayanan mantap jiwa. Teknisi ramah dan edukatif, dikasih tau tips biar AC lebih awet. Bakal langganan terus sih ini mah.",
+      text: "Sudah 3 tahun langganan Zen'Cool untuk maintenance AC di rumah. Selalu puas dengan hasilnya. AC jadi lebih awet dan jarang bermasalah. Teknisinya juga selalu menjelaskan dengan detail apa yang mereka kerjakan. Sangat direkomendasikan!.",
       author: "ANDI PRATAMA",
+      location: "Pondok Gede",
+      image: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?w=150&h=150&fit=crop"
     },
   ];
 
@@ -41,8 +48,21 @@ export function TestimonialSection() {
                   {t.text}
                 </p>
               </div>
-              <div className="font-bold text-xs tracking-widest text-[#131b2e] uppercase border-t-[2px] border-[#1E3A8A] pt-4">
-                - {t.author}
+              <div className="border-t-[2px] border-[#1E3A8A] pt-4 flex items-center gap-3 mt-4">
+                <img src={t.image} alt={t.author} className="w-10 h-10 rounded-full border-[2px] border-[#1E3A8A] object-cover bg-[#DBEAFE]" />
+                <div>
+                  <div className="font-bold text-xs tracking-widest text-[#131b2e] uppercase">
+                    {t.author}
+                  </div>
+                  <div className="text-[11px] font-medium text-[#434655] mb-1">
+                    {t.location}
+                  </div>
+                  <div className="flex gap-0.5">
+                    {[...Array(5)].map((_, index) => (
+                      <Star key={index} className="w-3.5 h-3.5 fill-[#FACC15] text-[#FACC15]" />
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           ))}

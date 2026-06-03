@@ -127,7 +127,43 @@ export function ContactSection() {
             </h3>
             <form className="space-y-4" onSubmit={(e) => {
               e.preventDefault();
-              window.open("https://wa.me/6285285564117", "_blank");
+              const form = e.currentTarget;
+              const name = (form.querySelector("#name") as HTMLInputElement).value;
+              const phone = (form.querySelector("#phone") as HTMLInputElement).value;
+              const address = (form.querySelector("#address") as HTMLTextAreaElement).value;
+              const location = (form.querySelector("#location") as HTMLInputElement).value;
+              const service = (form.querySelector("#service") as HTMLSelectElement).value;
+              const qty = (form.querySelector("#qty") as HTMLInputElement).value;
+              const date = (form.querySelector("#date") as HTMLInputElement).value;
+              const time = (form.querySelector("#time") as HTMLInputElement).value;
+              const problem = (form.querySelector("#problem") as HTMLTextAreaElement).value;
+
+              let hari = "-";
+              if (date) {
+                const [year, month, day] = date.split('-');
+                const dateObj = new Date(parseInt(year, 10), parseInt(month, 10) - 1, parseInt(day, 10));
+                hari = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'][dateObj.getDay()];
+              }
+
+              const text = [
+                `Halo Admin CV Zen'cool,`,
+                ``,
+                `Saya *${name}*, dari *${address}* ingin menghubungi Anda untuk informasi lebih lanjut mengenai layanan *${service}*.`,
+                ``,
+                `Nomor Telepon: ${phone}`,
+                `Hari Kunjungan: ${hari}`,
+                `Jam Kunjungan: ${time}`,
+                `Tanggal Kunjungan: ${date}`,
+                `Link Lokasi: ${location || "-"}`,
+                `Layanan: ${service}`,
+                `Jumlah AC: ${qty}`,
+                `Keluhan: ${problem}`,
+                ``,
+                `Terima kasih !`
+              ].join("\n");
+
+              const encodedText = encodeURIComponent(text);
+              window.open(`https://wa.me/6285285564117?text=${encodedText}`, "_blank");
             }}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1.5">

@@ -60,19 +60,19 @@ export function Footer() {
 
         <div>
           <h4 className="font-bold text-lg mb-4 text-[#dce3ec] font-[family-name:var(--font-syne)]">
-            Layanan
+            Layanan kami
           </h4>
           <ul className="space-y-2 text-[#b9c8db] font-medium text-sm">
-            <li><a href="#" className="hover:text-white transition-colors">Cuci AC</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Isi Freon</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Bongkar Pasang</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Servis Perbaikan</a></li>
+            <li><a href="" className="hover:text-white transition-colors">Cuci AC</a></li>
+            <li><a href="" className="hover:text-white transition-colors">Isi Freon</a></li>
+            <li><a href="" className="hover:text-white transition-colors">Bongkar Pasang</a></li>
+            <li><a href="" className="hover:text-white transition-colors">Servis Perbaikan</a></li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-bold text-lg mb-4 text-[#dce3ec] font-[family-name:var(--font-syne)]">
-            Perusahaan
+            Tautan kami
           </h4>
           <ul className="space-y-2 text-[#b9c8db] font-medium text-sm">
             <li><a href="#" className="hover:text-white transition-colors">Tentang Kami</a></li>

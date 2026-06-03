@@ -15,11 +15,11 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Service AC Zen'cool | Teknisi AC Terpercaya",
-  description: "Layanan servis AC profesional dengan teknisi bersertifikat, respons cepat, dan garansi pekerjaan. Solusi tuntas untuk segala masalah pendingin ruangan Anda.",
+  title: "Service AC CV Zen'cool | Teknisi AC Terpercaya",
+  description: "AC Bermasalah? Serahkan pada Ahlinya. Kami kembalikan performa dingin AC Anda lewat penanganan cepat dan transparan. Standar kerja tinggi, hasil kerja pasti.",
   openGraph: {
-    title: "Service AC Zen'cool | Teknisi AC Terpercaya",
-    description: "Layanan servis AC profesional dengan teknisi bersertifikat, respons cepat, dan garansi pekerjaan.",
+    title: "Service AC CV Zen'cool | Teknisi AC Terpercaya",
+    description: "AC Bermasalah? Serahkan pada Ahlinya. Penanganan cepat, transparan, dan hasil kerja pasti bergaransi.",
     url: "https://zencool.com",
     siteName: "Zen'cool",
     locale: "id_ID",
@@ -47,9 +47,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`${syne.variable} ${spaceGrotesk.variable} overflow-x-hidden max-w-full`}>
-      <body className="font-[family-name:var(--font-space-grotesk)] bg-[#faf8ff] text-[#0F172A] antialiased overflow-x-hidden w-full max-w-full selection:bg-[#2563EB] selection:text-white">
-        <div className="overflow-hidden w-full max-w-full flex flex-col min-h-screen">
+    <html lang="id" className={`${syne.variable} ${spaceGrotesk.variable} overflow-x-clip max-w-full`}>
+      <body className="font-[family-name:var(--font-space-grotesk)] bg-[#faf8ff] text-[#0F172A] antialiased overflow-x-clip w-full max-w-full selection:bg-[#2563EB] selection:text-white">
+        <div className="overflow-x-clip w-full max-w-full flex flex-col min-h-screen">
           {children}
         </div>
       </body>

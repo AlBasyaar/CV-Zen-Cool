@@ -43,8 +43,7 @@ export function HeroSection() {
           transition={{ delay: 0.2 }}
           className="text-lg md:text-xl font-medium max-w-2xl text-[#434655] mb-10 leading-relaxed"
         >
-          Teknisi bersertifikat, respons cepat, garansi pekerjaan. Solusi tuntas untuk segala masalah
-          pendingin ruangan Anda dengan gaya kerja tanpa kompromi.
+          Layanan perawatan dan perbaikan AC profesional dengan teknisi berpengalaman. Kami menjamin kualitas dan kepuasan pelanggan dengan harga terbaik.
         </motion.p>
 
         <motion.div

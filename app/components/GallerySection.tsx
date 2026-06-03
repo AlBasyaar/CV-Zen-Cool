@@ -3,12 +3,12 @@
 export function GallerySection() {
   // Ganti link-link di bawah dengan link foto dari Cloudinary Anda
   const galleryItems = [
-    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1770209748/Pembersihan_AC_Split_az82p8.jpg", title: "Pemasangan AC Baru" },
-    { image: "https://res.cloudinary.com/demo/image/upload/sample2.jpg", title: "Perbaikan Kompresor" },
-    { image: "https://res.cloudinary.com/demo/image/upload/sample3.jpg", title: "Instalasi Pipa" },
-    { image: "https://res.cloudinary.com/demo/image/upload/sample1.jpg", title: "Cuci AC Rutin" },
-    { image: "https://res.cloudinary.com/demo/image/upload/sample2.jpg", title: "Cek Kelistrikan" },
-    { image: "https://res.cloudinary.com/demo/image/upload/sample3.jpg", title: "Servis Lengkap" },
+    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Pembersihan AC Split" },
+    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Instalasi AC Baru" },
+    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Perbaikan AC overhool" },
+    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Pengelasan evapulator" },
+    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Penggantian Kapasitor" },
+    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Pembersihan Outdoor" },
   ];
 
   return (

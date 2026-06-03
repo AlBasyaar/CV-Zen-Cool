@@ -41,9 +41,18 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-lg md:text-xl font-medium max-w-2xl text-[#434655] mb-10 leading-relaxed"
+          className="text-lg md:text-xl font-medium max-w-2xl text-[#434655] mb-4 leading-relaxed"
         >
           Layanan perawatan dan perbaikan AC profesional dengan teknisi berpengalaman. Kami menjamin kualitas dan kepuasan pelanggan dengan harga terbaik.
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.25 }}
+          className="text-base md:text-lg font-semibold max-w-2xl text-[#131b2e] mb-10 leading-relaxed"
+        >
+          Zen – Filosofi Jepang yang berfokus pada ketenangan, kesederhanaan, dan keseimbangan. Dalam sebuah merek, kata ini memberikan kesan produk yang mampu menghadirkan kenyamanan dan suasana damai di dalam ruangan.
         </motion.p>
 
         <motion.div

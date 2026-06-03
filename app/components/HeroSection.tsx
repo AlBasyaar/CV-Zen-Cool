@@ -69,19 +69,19 @@ export function HeroSection() {
           className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full"
         >
           {[
-            { value: "500+", label: "Pelanggan" },
-            { value: "12+", label: "Tahun Exp" },
-            { value: "15 Jam", label: "Respons" },
+            { value: "500+", label: "Pelanggan Puas" },
+            { value: "12+", label: "Tahun Pengalaman" },
+            { value: "15 Jam", label: "Jam Layanan Admin" },
             { value: "100%", label: "Garansi" },
           ].map((stat, i) => (
             <div
               key={i}
-              className="bg-white border-[3px] border-[#1E3A8A] shadow-[4px_4px_0px_0px_#1E3A8A] p-4 rounded-sm flex flex-col items-center justify-center hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#1E3A8A] transition-all"
+              className="bg-white border-[3px] border-[#1E3A8A] shadow-[4px_4px_0px_0px_#1E3A8A] p-6 rounded-sm flex flex-col items-center justify-center hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_#1E3A8A] transition-all"
             >
-              <span className="font-[family-name:var(--font-syne)] text-2xl md:text-3xl font-bold text-[#2563EB]">
+              <span className="font-[family-name:var(--font-syne)] text-4xl font-bold text-[#2563EB] text-center">
                 {stat.value}
               </span>
-              <span className="text-xs md:text-sm font-bold text-[#434655] uppercase mt-1">
+              <span className="text-sm font-bold text-[#434655] uppercase mt-2 text-center">
                 {stat.label}
               </span>
             </div>

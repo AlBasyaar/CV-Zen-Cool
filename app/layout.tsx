@@ -47,9 +47,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`${syne.variable} ${spaceGrotesk.variable}`}>
-      <body className="font-[family-name:var(--font-space-grotesk)] bg-[#faf8ff] text-[#0F172A] antialiased overflow-x-hidden selection:bg-[#2563EB] selection:text-white">
-        {children}
+    <html lang="id" className={`${syne.variable} ${spaceGrotesk.variable} overflow-x-hidden max-w-full`}>
+      <body className="font-[family-name:var(--font-space-grotesk)] bg-[#faf8ff] text-[#0F172A] antialiased overflow-x-hidden w-full max-w-full selection:bg-[#2563EB] selection:text-white">
+        <div className="overflow-hidden w-full max-w-full flex flex-col min-h-screen">
+          {children}
+        </div>
       </body>
     </html>
   );

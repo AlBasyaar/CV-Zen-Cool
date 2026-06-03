@@ -71,20 +71,6 @@ The goal of CV-Zen-Cool is simple:
 * ESLint
 * PostCSS
 * Vercel
-
----
-
-## 🗺️ Roadmap
-
-* [x] Modern CV Builder
-* [x] Real-Time Preview
-* [x] Responsive Design
-* [ ] PDF Export Enhancement
-* [ ] Multiple Resume Templates
-* [ ] AI Resume Review
-* [ ] Cover Letter Generator
-* [ ] Multi-language Support
-
 ---
 
 ## 🚀 Quick Start

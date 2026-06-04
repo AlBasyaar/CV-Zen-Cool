@@ -1,4 +1,4 @@
-# CV-Zen-Cool
+# ❄️ CV-Zen-Cool
 
 > A responsive web application for booking trusted air conditioning maintenance services.
 

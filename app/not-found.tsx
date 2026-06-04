@@ -78,7 +78,7 @@ export default function NotFound() {
           <motion.h1 
             animate={{ rotate: [-2, 2, -2] }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            className="font-[family-name:var(--font-syne)] text-[6rem] sm:text-[8rem] md:text-[13rem] font-black text-white leading-none tracking-tighter"
+            className="font-[family-name:var(--font-syne)] text-[6rem] sm:text-[8rem] md:text-[13rem] font-black text-[#1E3A8A] leading-none tracking-tighter"
             style={{ 
               WebkitTextStroke: "6px #1E3A8A", 
               textShadow: "12px 12px 0px #2563EB" 

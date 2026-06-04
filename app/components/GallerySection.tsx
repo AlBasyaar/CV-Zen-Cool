@@ -3,12 +3,12 @@
 export function GallerySection() {
   // Ganti link-link di bawah dengan link foto dari Cloudinary Anda
   const galleryItems = [
-    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Pembersihan AC Split" },
-    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Instalasi AC Baru" },
-    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Perbaikan AC overhool" },
-    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Pengelasan evapulator" },
-    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Penggantian Kapasitor" },
-    { image: "https://res.cloudinary.com/demo/image/upload/", title: "Pembersihan Outdoor" },
+    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544781/4db3a0c5-6f10-4493-b34d-5d4dc5eb63cd_rr8dpp.jpg", title: "Pembersihan AC Split", pos: "50% 40%" },
+    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544573/342641db-68c9-4e67-8402-9a56da3fd5de_omwjab.jpg", title: "Instalasi & Pasang AC Baru", pos: "50% 50%" },
+    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544065/a3e67317-e6f6-408d-9113-495f19aec13f_eb2vnw.jpg", title: "Perbaikan AC overhool", pos: "50% 90%" },
+    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544822/c1f54e5b-6bd4-4e63-a183-f0874679c10a_qrruju.jpg", title: "Perbaikan & Pengelasan evaporator", pos: "50% 50%" },
+    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544936/copy_of_88569e4a-e7cc-46a1-838f-85e760be94b3_zcrn0m.jpg", title: "Isi & Tambah Freon", pos: "50% 50%" },
+    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544413/750ba920-6025-48cd-b53e-1b67c0ea2bc5_uhl7ug.jpg", title: "Pembersihan Outdoor", pos: "50% 40%" },
   ];
 
   return (
@@ -29,9 +29,9 @@ export function GallerySection() {
             key={i}
             className="group bg-white border-[3px] border-[#1E3A8A] shadow-[4px_4px_0px_0px_#1E3A8A] p-2 hover:-translate-y-1 hover:shadow-[8px_8px_0px_0px_#1E3A8A] transition-all rounded-sm flex flex-col"
           >
-            <div className="bg-[#DBEAFE] border-[2px] border-[#1E3A8A] h-48 md:h-64 flex items-center justify-center overflow-hidden relative group-hover:border-b-0">
+            <div className="bg-[#DBEAFE] border-[2px] border-[#1E3A8A] h-64 md:h-80 flex items-center justify-center overflow-hidden relative group-hover:border-b-0">
               <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#1E3A8A_1px,transparent_1px)] [background-size:16px_16px] z-0"></div>
-              <img src={item.image} alt={item.title} className="absolute inset-0 w-full h-full object-cover z-10 group-hover:scale-110 transition-transform duration-300" />
+              <img src={item.image} alt={item.title} style={{ objectPosition: item.pos || 'center' }} className="absolute inset-0 w-full h-full object-cover z-10 group-hover:scale-110 transition-transform duration-300" />
             </div>
             <div className="p-2 text-center font-bold text-sm md:text-base">
               {item.title}

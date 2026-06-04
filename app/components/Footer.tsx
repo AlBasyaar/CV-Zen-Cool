@@ -32,7 +32,7 @@ export function Footer() {
               <Snowflake className="w-5 h-5 text-white" />
             </div>
             <span className="font-[family-name:var(--font-syne)] text-2xl font-extrabold tracking-tight">
-              Zen&apos;cool
+              CV Zen&apos;cool
             </span>
           </a>
           <p className="text-[#b9c8db] font-medium text-sm leading-relaxed mb-6">

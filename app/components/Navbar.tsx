@@ -15,7 +15,7 @@ export function Navbar() {
             <Snowflake className="w-5 h-5 text-white" />
           </div>
           <span className="font-[family-name:var(--font-syne)] text-2xl font-extrabold tracking-tight text-[#131b2e]">
-            Zen&apos;cool
+           CV Zen&apos;cool
           </span>
         </a>
         

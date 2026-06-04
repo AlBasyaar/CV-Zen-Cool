@@ -31,7 +31,7 @@ export function Footer() {
             <div className="bg-[#2563EB] p-1.5 border-2 border-white shadow-[2px_2px_0px_0px_white] rounded-sm">
               <Snowflake className="w-5 h-5 text-white" />
             </div>
-            <span className="font-[family-name:var(--font-syne)] text-2xl font-extrabold tracking-tight">
+            <span className="font-[family-name:var(--font-syne)] text-xl font-extrabold tracking-tight">
               CV Zen&apos;cool
             </span>
           </a>

@@ -24,6 +24,10 @@ export function Ticker() {
             <span className="mx-6">◆</span>
             <Briefcase className="w-4 h-4 mr-2" />
             <span>Teknisi Berpengalaman</span>
+            <span className="mx-6">◆</span>
+            <span>Harga Transparan</span>
+            <span className="mx-6">◆</span>
+            <span>Melayani Jakarta &amp; Bekasi</span>
           </div>
         ))}
       </motion.div>

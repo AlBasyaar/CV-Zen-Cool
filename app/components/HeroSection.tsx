@@ -18,16 +18,16 @@ export function HeroSection() {
 
       <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -50, y: 50 }}
+          animate={{ opacity: 1, x: 0, y: 0 }}
           className="inline-flex items-center border-2 border-[#1E3A8A] bg-white px-4 py-1.5 rounded-sm shadow-[2px_2px_0px_0px_#1E3A8A] mb-8 font-bold text-xs tracking-wider"
         >
           AC BERSIH • UDARA SEJUK • HIDUP NYAMAN
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -50, y: 50 }}
+          animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ delay: 0.1 }}
           className="font-[family-name:var(--font-syne)] text-[clamp(2.5rem,5vw,4rem)] font-extrabold leading-[1.1] tracking-tight mb-6 text-[#131b2e]"
         >
@@ -38,8 +38,8 @@ export function HeroSection() {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -50, y: 50 }}
+          animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ delay: 0.2 }}
           className="text-lg md:text-xl font-medium max-w-2xl text-[#434655] mb-4 leading-relaxed"
         >
@@ -47,8 +47,8 @@ export function HeroSection() {
         </motion.p>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -50, y: 50 }}
+          animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ delay: 0.25 }}
           className="text-base md:text-lg font-semibold max-w-2xl text-[#131b2e] mb-10 leading-relaxed"
         >
@@ -56,8 +56,8 @@ export function HeroSection() {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -50, y: 50 }}
+          animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4 mb-16"
         >
@@ -72,8 +72,8 @@ export function HeroSection() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -50, y: 50 }}
+          animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ delay: 0.4 }}
           className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full"
         >

@@ -1,11 +1,18 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { CheckSquare } from "lucide-react";
 import { buttonBase } from "./shared";
 
 export function PricingSection() {
   return (
-    <section id="harga" className="py-20 px-6 max-w-[1280px] mx-auto">
+    <section id="harga" className="py-20 px-6 max-w-[1280px] mx-auto overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, x: -50, y: 50 }}
+        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
       <div className="text-center mb-16">
         <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-[#131b2e] tracking-tight mb-4">
           Harga Layanan
@@ -27,6 +34,7 @@ export function PricingSection() {
           </div>
         </div>
       </div>
+      </motion.div>
     </section>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, MessageCircle, Clock } from "lucide-react";
 import { buttonBase, cardBase } from "./shared";
 
@@ -26,7 +27,13 @@ const TiktokIcon = ({ className }: { className?: string }) => (
 export function ContactSection() {
   return (
     <div className="w-full border-t-[3px] border-[#1E3A8A]">
-      <section id="kontak" className="py-20 px-6 max-w-[1280px] mx-auto">
+      <section id="kontak" className="py-20 px-6 max-w-[1280px] mx-auto overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, x: -50, y: 50 }}
+          whileInView={{ opacity: 1, x: 0, y: 0 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
         <div className="text-center mb-16">
           <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-[#131b2e] tracking-tight mb-4">
             Hubungi Kami
@@ -223,6 +230,7 @@ export function ContactSection() {
             </form>
           </div>
         </div>
+        </motion.div>
       </section>
     </div>
   );

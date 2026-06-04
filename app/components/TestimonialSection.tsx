@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { cardBase } from "./shared";
 
@@ -26,8 +27,14 @@ export function TestimonialSection() {
   ];
 
   return (
-    <section id="testimoni" className="py-20 px-6 bg-[#2563EB] border-y-[3px] border-[#1E3A8A] shadow-[0px_8px_0px_0px_#1E3A8A]">
-      <div className="max-w-[1280px] mx-auto">
+    <section id="testimoni" className="py-20 px-6 bg-[#2563EB] border-y-[3px] border-[#1E3A8A] shadow-[0px_8px_0px_0px_#1E3A8A] overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, x: -50, y: 50 }}
+        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="max-w-[1280px] mx-auto"
+      >
         <div className="text-center mb-16">
           <h2 className="font-[family-name:var(--font-syne)] text-[clamp(2rem,4vw,3rem)] font-extrabold text-white tracking-tight mb-4">
             Mereka Sudah Buktikan
@@ -67,7 +74,7 @@ export function TestimonialSection() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

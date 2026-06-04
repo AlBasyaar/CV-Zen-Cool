@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export function GallerySection() {
@@ -39,7 +40,7 @@ export function GallerySection() {
           >
             <div className="bg-[#DBEAFE] border-[2px] border-[#1E3A8A] h-64 md:h-80 flex items-center justify-center overflow-hidden relative group-hover:border-b-0">
               <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#1E3A8A_1px,transparent_1px)] [background-size:16px_16px] z-0"></div>
-              <img src={item.image} alt={item.title} style={{ objectPosition: item.pos || 'center' }} className="absolute inset-0 w-full h-full object-cover z-10 group-hover:scale-110 transition-transform duration-300" />
+              <Image src={item.image} alt={item.title} fill style={{ objectPosition: item.pos || 'center' }} className="absolute inset-0 object-cover z-10 group-hover:scale-110 transition-transform duration-300" />
             </div>
             <div className="p-2 text-center font-bold text-sm md:text-base">
               {item.title}

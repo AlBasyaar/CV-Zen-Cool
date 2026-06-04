@@ -4,25 +4,32 @@ import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import { cardBase } from "./shared";
 
+const AvatarPlaceholder = ({ initials }: { initials: string }) => (
+  <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <rect width="40" height="40" rx="20" fill="#DBEAFE" stroke="#1E3A8A" strokeWidth="2"/>
+    <text x="20" y="25" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#1E3A8A">{initials}</text>
+  </svg>
+);
+
 export function TestimonialSection() {
   const testimonials = [
     {
       text: "Teknisi dari Zen'Cool sangat profesional dan tepat waktu. AC saya yang sudah tidak dingin kembali seperti baru setelah diservis. Mereka juga memberikan tips perawatan yang sangat berguna. Pasti akan menggunakan jasa mereka lagi!.",
       author: "BUDI SANTOSO",
       location: "Jakarta",
-      image: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150&h=150&fit=crop"
+      initials: "BS"
     },
     {
       text: "Saya sangat puas dengan layanan Zen'Cool. Mereka merespons dengan cepat saat AC kantor kami bermasalah. Teknisinya ramah, kompeten, dan memberikan solusi yang tepat. Harganya juga sangat kompetitif dibandingkan penyedia jasa lainnya. Sangat direkomendasikan!.",
       author: "SITI RAHAYU",
       location: "Bekasi",
-      image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=150&h=150&fit=crop"
+      initials: "SR"
     },
     {
       text: "Sudah 3 tahun langganan Zen'Cool untuk maintenance AC di rumah. Selalu puas dengan hasilnya. AC jadi lebih awet dan jarang bermasalah. Teknisinya juga selalu menjelaskan dengan detail apa yang mereka kerjakan. Sangat direkomendasikan!.",
       author: "ANDI PRATAMA",
       location: "Pondok Gede",
-      image: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?w=150&h=150&fit=crop"
+      initials: "AP"
     },
   ];
 
@@ -56,7 +63,7 @@ export function TestimonialSection() {
                 </p>
               </div>
               <div className="border-t-[2px] border-[#1E3A8A] pt-4 flex items-center gap-3 mt-4">
-                <img src={t.image} alt={t.author} className="w-10 h-10 rounded-full border-[2px] border-[#1E3A8A] object-cover bg-[#DBEAFE]" />
+                <AvatarPlaceholder initials={t.initials} />
                 <div>
                   <div className="font-bold text-xs tracking-widest text-[#131b2e] uppercase">
                     {t.author}

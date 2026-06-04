@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { CheckSquare } from "lucide-react";
 import { buttonBase } from "./shared";
@@ -26,9 +27,11 @@ export function PricingSection() {
         <div className="bg-white border-[3px] border-[#1E3A8A] shadow-[8px_8px_0px_0px_#1E3A8A] rounded-sm p-2 w-full max-w-4xl hover:-translate-y-1 hover:shadow-[12px_12px_0px_0px_#1E3A8A] transition-all">
           <div className="w-full bg-[#DBEAFE] border-[2px] border-[#1E3A8A] overflow-hidden rounded-sm relative">
 
-            <img 
+            <Image 
               src="https://res.cloudinary.com/dr5pehdsw/image/upload/v1780459467/Paket_Service_AC_y3sq0j.png" 
               alt="Daftar Harga Layanan" 
+              width={900}
+              height={600}
               className="w-full h-auto object-contain" 
             />
           </div>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Check } from "lucide-react";
+import { cardBase } from "./shared";
 
 export function FAQSection() {
   const faqs = [
@@ -11,22 +12,22 @@ export function FAQSection() {
       a: (
         <ul className="space-y-3 pt-1">
           <li className="flex items-start gap-3">
-            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed">Pengerjaan service bergaransi 1 bulan.</span>
+            <span className="leading-relaxed"><strong>Masa Garansi:</strong> Pengerjaan service bergaransi 1 bulan (30 hari).</span>
           </li>
           <li className="flex items-start gap-3">
-            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed">Jika terjadi masalah dalam 30 hari setelah service, kami akan memperbaikinya tanpa biaya tambahan.</span>
+            <span className="leading-relaxed"><strong>Klaim Garansi:</strong> Jika terjadi masalah yang sama dalam masa garansi, kami akan memperbaikinya tanpa biaya tambahan.</span>
           </li>
           <li className="flex items-start gap-3">
-            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed">Garansi tidak berlaku jika kerusakan disebabkan oleh faktor eksternal seperti bencana alam, tegangan listrik tidak stabil, atau modifikasi yang dilakukan oleh pihak lain.</span>
+            <span className="leading-relaxed"><strong>Pengecualian:</strong> Garansi tidak berlaku jika kerusakan disebabkan oleh faktor eksternal (bencana alam, tegangan listrik tidak stabil, atau modifikasi oleh pihak lain).</span>
           </li>
         </ul>
       ),
@@ -36,16 +37,16 @@ export function FAQSection() {
       a: (
         <ul className="space-y-3 pt-1">
           <li className="flex items-start gap-3">
-            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed">Pembayaran dapat dilakukan dengan tunai atau transfer bank.</span>
+            <span className="leading-relaxed"><strong>Metode Pembayaran:</strong> Pembayaran dapat dilakukan secara tunai atau melalui transfer bank.</span>
           </li>
           <li className="flex items-start gap-3">
-            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed">Invoice akan diberikan setelah Pengerjaan layanan selesai.</span>
+            <span className="leading-relaxed"><strong>Tagihan (Invoice):</strong> Invoice resmi akan diberikan setelah pengerjaan layanan selesai dengan baik.</span>
           </li>
         </ul>
       ),
@@ -55,22 +56,22 @@ export function FAQSection() {
       a: (
         <ul className="space-y-3 pt-1">
           <li className="flex items-start gap-3">
-            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed">Jadwal layanan dapat dibuat melalui telepon, WhatsApp, atau website kami.</span>
+            <span className="leading-relaxed"><strong>Pemesanan Jadwal:</strong> Jadwal layanan dapat dibuat melalui Telepon, WhatsApp, atau Website kami.</span>
           </li>
           <li className="flex items-start gap-3">
-            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed">Proses reschedule yang fleksibel menyesuaikan kembali dengan ketersediaan waktu luang Anda.</span>
+            <span className="leading-relaxed"><strong>Perubahan Jadwal:</strong> Proses <em>reschedule</em> sangat fleksibel dan dapat menyesuaikan kembali dengan ketersediaan waktu Anda.</span>
           </li>
           <li className="flex items-start gap-3">
-            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A]">
+            <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed">Teknisi kami akan tiba sesuai jarak tempuh. Jika terjadi keterlambatan, kami akan menginformasika kepada anda..</span>
+            <span className="leading-relaxed"><strong>Kedatangan Teknisi:</strong> Teknisi kami akan tiba sesuai estimasi waktu tempuh. Jika terjadi kendala di perjalanan, kami akan segera menginformasikan kepada Anda.</span>
           </li>
         </ul>
       ),
@@ -96,8 +97,9 @@ export function FAQSection() {
         </p>
       </div>
 
-      <div className="space-y-4">
-        {faqs.map((faq, i) => {
+      <div className={`${cardBase} p-6 md:p-8 bg-[#DBEAFE]/30`}>
+        <div className="space-y-4">
+          {faqs.map((faq, i) => {
           const isOpen = openIndex === i;
           return (
             <div
@@ -138,6 +140,7 @@ export function FAQSection() {
             </div>
           );
         })}
+        </div>
       </div>
       </motion.div>
     </section>

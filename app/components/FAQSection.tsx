@@ -89,7 +89,7 @@ export function FAQSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
       <div className="text-center mb-16">
-        <h2 className="font-[family-name:var(--font-syne)] text-[clamp(1.15rem,5.5vw,3rem)] font-extrabold text-[#131b2e] tracking-tighter mb-4 whitespace-nowrap">
+        <h2 className="font-[family-name:var(--font-syne)] text-[clamp(1.15rem,5.5vw,3rem)] font-extrabold text-[#131b2e] tracking-tighter mb-4">
           Syarat dan Ketentuan
         </h2>
         <p className="text-[#434655] font-medium">

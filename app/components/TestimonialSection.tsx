@@ -5,10 +5,12 @@ import { Star } from "lucide-react";
 import { cardBase } from "./shared";
 
 const AvatarPlaceholder = ({ initials }: { initials: string }) => (
-  <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <rect width="40" height="40" rx="20" fill="#DBEAFE" stroke="#1E3A8A" strokeWidth="2"/>
-    <text x="20" y="25" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#1E3A8A">{initials}</text>
-  </svg>
+  <div
+    aria-hidden="true"
+    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#DBEAFE] border-2 border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] font-[family-name:var(--font-syne)] text-sm font-bold leading-none text-[#1E3A8A]"
+  >
+    {initials}
+  </div>
 );
 
 export function TestimonialSection() {

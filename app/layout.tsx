@@ -15,10 +15,10 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Service AC CV Zen'cool | Teknisi AC Terpercaya",
+  title: "CV Zen'Cool – Spesialis Service AC Rumah & Kantor",
   description: "AC Bermasalah? Serahkan pada Ahlinya. Kami kembalikan performa dingin AC Anda lewat penanganan cepat dan transparan. Standar kerja tinggi, hasil kerja pasti.",
   openGraph: {
-    title: "Service AC CV Zen'cool | Teknisi AC Terpercaya",
+    title: "CV Zen'Cool – Spesialis Service AC Rumah & Kantor",
     description: "AC Bermasalah? Serahkan pada Ahlinya. Penanganan cepat, transparan, dan hasil kerja pasti bergaransi.",
     siteName: "Zen'cool",
     locale: "id_ID",

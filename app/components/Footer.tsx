@@ -103,7 +103,7 @@ export function Footer() {
         </div>
       </div>
       <div className="max-w-[1280px] mx-auto px-6 border-t border-[#4e565d] pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium text-[#b9c8db]">
-        <div>© 2026 CV Zen&apos;cool. Teknisi AC Terpercaya.</div>
+        <div>© 2026 CV Zen&apos;cool. All rights reserved.</div>
         <div className="flex gap-4">
           <a href="#" className="hover:text-white">Syarat & Ketentuan</a>
           <a href="#" className="hover:text-white">Kebijakan Privasi</a>

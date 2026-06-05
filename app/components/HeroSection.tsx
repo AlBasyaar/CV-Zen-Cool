@@ -12,10 +12,6 @@ export function HeroSection() {
           <div key={i} className="w-1.5 h-1.5 bg-[#1E3A8A] rounded-full" />
         ))}
       </div>
-      <div className="absolute top-[30%] left-[5%] text-5xl text-[#1E3A8A] opacity-20 font-bold z-[-1]">
-        +
-      </div>
-
       <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -50, y: 50 }}
@@ -29,11 +25,11 @@ export function HeroSection() {
           initial={{ opacity: 0, x: -50, y: 50 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="font-[family-name:var(--font-syne)] text-[clamp(2.5rem,5vw,4rem)] font-extrabold leading-[1.1] tracking-tight mb-6 text-[#131b2e]"
+          className="font-[family-name:var(--font-syne)] text-3xl sm:text-4xl md:text-[3.4rem] lg:text-[3.75rem] font-extrabold leading-[1.04] sm:leading-[1.06] tracking-tight mb-6 text-[#131b2e]"
         >
-          AC Rusak? <br />
-          <span className="inline-block bg-[#2563EB] text-white px-4 py-1 border-[3px] border-[#1E3A8A] shadow-[6px_6px_0px_0px_#1E3A8A] mt-2 rotate-[-1deg] hover:rotate-0 transition-transform">
-            Kami Perbaiki.
+          AC Bermasalah? <br />
+          <span className="inline-block bg-[#2563EB] text-white px-3 py-1 sm:px-3.5 sm:py-1.5 border-[3px] border-[#1E3A8A] shadow-[6px_6px_0px_0px_#1E3A8A] mt-2 rotate-[-1deg] hover:rotate-0 transition-transform text-[0.8em] sm:text-[0.9em] leading-none">
+            Serahkan pada Ahlinya.
           </span>
         </motion.h1>
 
@@ -52,7 +48,7 @@ export function HeroSection() {
           transition={{ delay: 0.25 }}
           className="text-base md:text-lg font-semibold max-w-2xl text-[#131b2e] mb-10 leading-relaxed"
         >
-          Zen – Filosofi Jepang yang berfokus pada ketenangan, kesederhanaan, dan keseimbangan. Dalam sebuah merek, kata ini memberikan kesan produk yang mampu menghadirkan kenyamanan dan suasana damai di dalam ruangan.
+          Zen - Filosofi Jepang yang berfokus pada ketenangan, kesederhanaan, dan keseimbangan. Dalam sebuah merek, kata ini memberikan kesan produk yang mampu menghadirkan kenyamanan dan suasana damai di dalam ruangan.
         </motion.p>
 
         <motion.div

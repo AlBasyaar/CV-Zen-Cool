@@ -10,24 +10,24 @@ export function FAQSection() {
     {
       q: "Layanan dan Jaminan",
       a: (
-        <ul className="space-y-3 pt-1">
+        <ul className="space-y-2 md:space-y-3 pt-1">
           <li className="flex items-start gap-3">
             <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed"><strong>Masa Garansi:</strong> Pengerjaan service bergaransi 1 bulan (30 hari).</span>
+            <span className="text-sm md:text-base leading-relaxed"><strong>Masa Garansi:</strong> Pengerjaan service bergaransi 1 bulan (30 hari).</span>
           </li>
-          <li className="flex items-start gap-3">
+          <li className="flex items-start gap-2 md:gap-3">
             <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed"><strong>Klaim Garansi:</strong> Jika terjadi masalah yang sama dalam masa garansi, kami akan memperbaikinya tanpa biaya tambahan.</span>
+            <span className="text-sm md:text-base leading-relaxed"><strong>Klaim Garansi:</strong> Jika terjadi masalah yang sama dalam masa garansi, kami akan memperbaikinya tanpa biaya tambahan.</span>
           </li>
-          <li className="flex items-start gap-3">
+          <li className="flex items-start gap-2 md:gap-3">
             <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed"><strong>Pengecualian:</strong> Garansi tidak berlaku jika kerusakan disebabkan oleh faktor eksternal (bencana alam, tegangan listrik tidak stabil, atau modifikasi oleh pihak lain).</span>
+            <span className="text-sm md:text-base leading-relaxed"><strong>Pengecualian:</strong> Garansi tidak berlaku jika kerusakan disebabkan oleh faktor eksternal (bencana alam, tegangan listrik tidak stabil, atau modifikasi oleh pihak lain).</span>
           </li>
         </ul>
       ),
@@ -35,18 +35,18 @@ export function FAQSection() {
     {
       q: "Pembayaran",
       a: (
-        <ul className="space-y-3 pt-1">
-          <li className="flex items-start gap-3">
+        <ul className="space-y-2 md:space-y-3 pt-1">
+          <li className="flex items-start gap-2 md:gap-3">
             <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed"><strong>Metode Pembayaran:</strong> Pembayaran dapat dilakukan secara tunai atau melalui transfer bank.</span>
+            <span className="text-sm md:text-base leading-relaxed"><strong>Metode Pembayaran:</strong> Pembayaran dapat dilakukan secara tunai atau melalui transfer bank.</span>
           </li>
-          <li className="flex items-start gap-3">
+          <li className="flex items-start gap-2 md:gap-3">
             <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed"><strong>Tagihan (Invoice):</strong> Invoice resmi akan diberikan setelah pengerjaan layanan selesai dengan baik.</span>
+            <span className="text-sm md:text-base leading-relaxed"><strong>Tagihan (Invoice):</strong> Invoice resmi akan diberikan setelah pengerjaan layanan selesai dengan baik.</span>
           </li>
         </ul>
       ),
@@ -54,24 +54,24 @@ export function FAQSection() {
     {
       q: "Jadwal, Pembatalan & Reschedule",
       a: (
-        <ul className="space-y-3 pt-1">
-          <li className="flex items-start gap-3">
+        <ul className="space-y-2 md:space-y-3 pt-1">
+          <li className="flex items-start gap-2 md:gap-3">
             <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed"><strong>Pemesanan Jadwal:</strong> Jadwal layanan dapat dibuat melalui Telepon, WhatsApp, atau Website kami.</span>
+            <span className="text-sm md:text-base leading-relaxed"><strong>Pemesanan Jadwal:</strong> Jadwal layanan dapat dibuat melalui Telepon, WhatsApp, atau Website kami.</span>
           </li>
-          <li className="flex items-start gap-3">
+          <li className="flex items-start gap-2 md:gap-3">
             <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed"><strong>Perubahan Jadwal:</strong> Proses <em>reschedule</em> sangat fleksibel dan dapat menyesuaikan kembali dengan ketersediaan waktu Anda.</span>
+            <span className="text-sm md:text-base leading-relaxed"><strong>Perubahan Jadwal:</strong> Proses <em>reschedule</em> sangat fleksibel dan dapat menyesuaikan kembali dengan ketersediaan waktu Anda.</span>
           </li>
-          <li className="flex items-start gap-3">
+          <li className="flex items-start gap-2 md:gap-3">
             <div className="mt-0.5 bg-[#EFF6FF] text-[#2563EB] p-0.5 rounded-sm border-[2px] border-[#1E3A8A] shadow-[2px_2px_0px_0px_#1E3A8A] shrink-0">
               <Check className="w-4 h-4 stroke-[3]" />
             </div>
-            <span className="leading-relaxed"><strong>Kedatangan Teknisi:</strong> Teknisi kami akan tiba sesuai estimasi waktu tempuh. Jika terjadi kendala di perjalanan, kami akan segera menginformasikan kepada Anda.</span>
+            <span className="text-sm md:text-base leading-relaxed"><strong>Kedatangan Teknisi:</strong> Teknisi kami akan tiba sesuai estimasi waktu tempuh. Jika terjadi kendala di perjalanan, kami akan segera menginformasikan kepada Anda.</span>
           </li>
         </ul>
       ),
@@ -131,7 +131,7 @@ export function FAQSection() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="px-6 pb-6 pt-2 font-medium text-[#434655] border-t-[2px] border-dashed border-[#1E3A8A] mx-6 mt-2">
+                    <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 font-medium text-[#434655] border-t-[2px] border-dashed border-[#1E3A8A] mx-4 sm:mx-6 mt-2">
                       {faq.a}
                     </div>
                   </motion.div>

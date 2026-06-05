@@ -6,12 +6,42 @@ import { motion } from "framer-motion";
 export function GallerySection() {
   // Ganti link-link di bawah dengan link foto dari Cloudinary Anda
   const galleryItems = [
-    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544781/4db3a0c5-6f10-4493-b34d-5d4dc5eb63cd_rr8dpp.jpg", title: "Pembersihan AC Split", pos: "50% 40%" },
-    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544573/342641db-68c9-4e67-8402-9a56da3fd5de_omwjab.jpg", title: "Instalasi & Pasang AC Baru", pos: "50% 50%" },
-    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544065/a3e67317-e6f6-408d-9113-495f19aec13f_eb2vnw.jpg", title: "Perbaikan AC overhool", pos: "50% 90%" },
-    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544822/c1f54e5b-6bd4-4e63-a183-f0874679c10a_qrruju.jpg", title: "Perbaikan & Pengelasan evaporator", pos: "50% 50%" },
-    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544936/copy_of_88569e4a-e7cc-46a1-838f-85e760be94b3_zcrn0m.jpg", title: "Isi & Tambah Freon", pos: "50% 50%" },
-    { image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544413/750ba920-6025-48cd-b53e-1b67c0ea2bc5_uhl7ug.jpg", title: "Pembersihan Outdoor", pos: "50% 40%" },
+    {
+      image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544781/4db3a0c5-6f10-4493-b34d-5d4dc5eb63cd_rr8dpp.jpg",
+      title: "Pembersihan AC Split",
+      description: "Pembersihan unit indoor untuk menjaga performa pendinginan dan kualitas udara.",
+      pos: "50% 40%",
+    },
+    {
+      image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544573/342641db-68c9-4e67-8402-9a56da3fd5de_omwjab.jpg",
+      title: "Instalasi & Pasang AC Baru",
+      description: "Pemasangan unit baru dilakukan dengan standar kerja yang rapi dan aman.",
+      pos: "50% 50%",
+    },
+    {
+      image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544065/a3e67317-e6f6-408d-9113-495f19aec13f_eb2vnw.jpg",
+      title: "Perbaikan AC overhool",
+      description: "Perbaikan menyeluruh untuk mengembalikan fungsi AC secara optimal.",
+      pos: "50% 90%",
+    },
+    {
+      image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544822/c1f54e5b-6bd4-4e63-a183-f0874679c10a_qrruju.jpg",
+      title: "Perbaikan & Pengelasan evaporator",
+      description: "Penanganan evaporator untuk memastikan sistem bekerja kembali dengan baik.",
+      pos: "50% 50%",
+    },
+    {
+      image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544936/copy_of_88569e4a-e7cc-46a1-838f-85e760be94b3_zcrn0m.jpg",
+      title: "Isi & Tambah Freon",
+      description: "Pengisian refrigeran sesuai kebutuhan untuk menjaga daya dingin AC.",
+      pos: "50% 50%",
+    },
+    {
+      image: "https://res.cloudinary.com/dr5pehdsw/image/upload/v1780544413/750ba920-6025-48cd-b53e-1b67c0ea2bc5_uhl7ug.jpg",
+      title: "Pembersihan Outdoor",
+      description: "Perawatan unit outdoor agar sirkulasi tetap lancar dan efisien.",
+      pos: "50% 40%",
+    },
   ];
 
   return (
@@ -44,6 +74,9 @@ export function GallerySection() {
             </div>
             <div className="p-2 text-center font-bold text-sm md:text-base">
               {item.title}
+            </div>
+            <div className="px-2 pb-2 text-center text-xs md:text-sm leading-relaxed text-[#434655]">
+              {item.description}
             </div>
           </div>
         ))}

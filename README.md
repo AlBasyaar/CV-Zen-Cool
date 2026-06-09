@@ -3,7 +3,7 @@
 > A responsive web application for booking trusted air conditioning maintenance services.
 
 > <p align="center">
-  <img src="https://res.cloudinary.com/dr5pehdsw/image/upload/v1780475590/Halaman_Utama_zencool_miwc49.png" alt="CV-Zen-Cool Screenshot" width="100%">
+  <img src="https://res.cloudinary.com/dr5pehdsw/image/upload/v1780981152/1dae1983-72c2-41b0-b8cb-bed1dd39100f.png" alt="CV-Zen-Cool Screenshot" width="100%">
 </p>
 
 ![GitHub stars](https://img.shields.io/github/stars/AlBasyaar/CV-Zen-Cool?style=for-the-badge&logo=github) ![GitHub forks](https://img.shields.io/github/forks/AlBasyaar/CV-Zen-Cool?style=for-the-badge&logo=github) ![GitHub issues](https://img.shields.io/github/issues/AlBasyaar/CV-Zen-Cool?style=for-the-badge&logo=github) ![Last commit](https://img.shields.io/github/last-commit/AlBasyaar/CV-Zen-Cool?style=for-the-badge&logo=github) ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
